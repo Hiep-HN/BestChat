@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B5588251B0C946C002DB140 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5588231B0C946C002DB140 /* HomeVC.m */; };
+		8B5588261B0C946C002DB140 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B5588241B0C946C002DB140 /* HomeVC.xib */; };
+		8B55882B1B0C94A3002DB140 /* ContactsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5588291B0C94A3002DB140 /* ContactsVC.m */; };
+		8B55882C1B0C94A3002DB140 /* ContactsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B55882A1B0C94A3002DB140 /* ContactsVC.xib */; };
+		8B5588301B0C94B3002DB140 /* ChatsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B55882E1B0C94B3002DB140 /* ChatsVC.m */; };
+		8B5588311B0C94B3002DB140 /* ChatsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B55882F1B0C94B3002DB140 /* ChatsVC.xib */; };
+		8B5588351B0C94C6002DB140 /* RecentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5588331B0C94C6002DB140 /* RecentVC.m */; };
+		8B5588361B0C94C6002DB140 /* RecentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B5588341B0C94C6002DB140 /* RecentVC.xib */; };
+		8B55883A1B0C94D8002DB140 /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5588381B0C94D8002DB140 /* SettingsVC.m */; };
+		8B55883B1B0C94D8002DB140 /* SettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B5588391B0C94D8002DB140 /* SettingsVC.xib */; };
 		8B5DE21F1B0B342600472392 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5DE21E1B0B342600472392 /* main.m */; };
 		8B5DE2251B0B342600472392 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5DE2241B0B342600472392 /* ViewController.m */; };
 		8B5DE2281B0B342600472392 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B5DE2261B0B342600472392 /* Main.storyboard */; };
@@ -102,6 +112,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B5588221B0C946C002DB140 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		8B5588231B0C946C002DB140 /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		8B5588241B0C946C002DB140 /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		8B5588281B0C94A3002DB140 /* ContactsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsVC.h; sourceTree = "<group>"; };
+		8B5588291B0C94A3002DB140 /* ContactsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsVC.m; sourceTree = "<group>"; };
+		8B55882A1B0C94A3002DB140 /* ContactsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsVC.xib; sourceTree = "<group>"; };
+		8B55882D1B0C94B3002DB140 /* ChatsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatsVC.h; sourceTree = "<group>"; };
+		8B55882E1B0C94B3002DB140 /* ChatsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatsVC.m; sourceTree = "<group>"; };
+		8B55882F1B0C94B3002DB140 /* ChatsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatsVC.xib; sourceTree = "<group>"; };
+		8B5588321B0C94C6002DB140 /* RecentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentVC.h; sourceTree = "<group>"; };
+		8B5588331B0C94C6002DB140 /* RecentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentVC.m; sourceTree = "<group>"; };
+		8B5588341B0C94C6002DB140 /* RecentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecentVC.xib; sourceTree = "<group>"; };
+		8B5588371B0C94D8002DB140 /* SettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsVC.h; sourceTree = "<group>"; };
+		8B5588381B0C94D8002DB140 /* SettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsVC.m; sourceTree = "<group>"; };
+		8B5588391B0C94D8002DB140 /* SettingsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsVC.xib; sourceTree = "<group>"; };
+		8B55883C1B0C9596002DB140 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		8B55883D1B0C95BE002DB140 /* Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		8B5DE2191B0B342600472392 /* BestChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B5DE21D1B0B342600472392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B5DE21E1B0B342600472392 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -299,6 +326,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B55881D1B0C93DD002DB140 /* ChatsVC */ = {
+			isa = PBXGroup;
+			children = (
+				8B55882D1B0C94B3002DB140 /* ChatsVC.h */,
+				8B55882E1B0C94B3002DB140 /* ChatsVC.m */,
+				8B55882F1B0C94B3002DB140 /* ChatsVC.xib */,
+			);
+			path = ChatsVC;
+			sourceTree = "<group>";
+		};
+		8B55881E1B0C93DD002DB140 /* ContactsVC */ = {
+			isa = PBXGroup;
+			children = (
+				8B5588281B0C94A3002DB140 /* ContactsVC.h */,
+				8B5588291B0C94A3002DB140 /* ContactsVC.m */,
+				8B55882A1B0C94A3002DB140 /* ContactsVC.xib */,
+			);
+			path = ContactsVC;
+			sourceTree = "<group>";
+		};
+		8B55881F1B0C93DD002DB140 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				8B5588221B0C946C002DB140 /* HomeVC.h */,
+				8B5588231B0C946C002DB140 /* HomeVC.m */,
+				8B5588241B0C946C002DB140 /* HomeVC.xib */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		8B5588201B0C93DD002DB140 /* RecentVC */ = {
+			isa = PBXGroup;
+			children = (
+				8B5588321B0C94C6002DB140 /* RecentVC.h */,
+				8B5588331B0C94C6002DB140 /* RecentVC.m */,
+				8B5588341B0C94C6002DB140 /* RecentVC.xib */,
+			);
+			path = RecentVC;
+			sourceTree = "<group>";
+		};
+		8B5588211B0C93DD002DB140 /* SettingsVC */ = {
+			isa = PBXGroup;
+			children = (
+				8B5588371B0C94D8002DB140 /* SettingsVC.h */,
+				8B5588381B0C94D8002DB140 /* SettingsVC.m */,
+				8B5588391B0C94D8002DB140 /* SettingsVC.xib */,
+			);
+			path = SettingsVC;
+			sourceTree = "<group>";
+		};
+		8B5588271B0C9489002DB140 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
 		8B5DE2101B0B342600472392 = {
 			isa = PBXGroup;
 			children = (
@@ -387,6 +471,12 @@
 		8B5DE2671B0B3AE100472392 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8B5588271B0C9489002DB140 /* Welcome */,
+				8B55881D1B0C93DD002DB140 /* ChatsVC */,
+				8B55881E1B0C93DD002DB140 /* ContactsVC */,
+				8B55881F1B0C93DD002DB140 /* HomeVC */,
+				8B5588201B0C93DD002DB140 /* RecentVC */,
+				8B5588211B0C93DD002DB140 /* SettingsVC */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -403,6 +493,8 @@
 		8B5DE2691B0B3AE100472392 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				8B55883C1B0C9596002DB140 /* Common.h */,
+				8B55883D1B0C95BE002DB140 /* Define.h */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -764,16 +856,21 @@
 			files = (
 				8B5DE2281B0B342600472392 /* Main.storyboard in Resources */,
 				8B5DE34C1B0B3AE200472392 /* JSQMessagesTypingIndicatorFooterView.xib in Resources */,
+				8B5588261B0C946C002DB140 /* HomeVC.xib in Resources */,
 				8B5DE3221B0B3AE200472392 /* JSQMessagesAssets.bundle in Resources */,
 				8B5DE22D1B0B342600472392 /* LaunchScreen.xib in Resources */,
 				8B5DE3471B0B3AE200472392 /* JSQMessagesLoadEarlierHeaderView.xib in Resources */,
 				8B5DE3421B0B3AE200472392 /* JSQMessagesCollectionViewCellOutgoing.xib in Resources */,
+				8B55883B1B0C94D8002DB140 /* SettingsVC.xib in Resources */,
+				8B5588361B0C94C6002DB140 /* RecentVC.xib in Resources */,
 				8B5DE22A1B0B342600472392 /* Images.xcassets in Resources */,
+				8B5588311B0C94B3002DB140 /* ChatsVC.xib in Resources */,
 				8B5DE32C1B0B3AE200472392 /* JSQMessagesViewController.xib in Resources */,
 				8B5DE34F1B0B3AE200472392 /* ProgressHUD.bundle in Resources */,
 				8B5DE34D1B0B3AE200472392 /* Info.plist in Resources */,
 				8B5DE3401B0B3AE200472392 /* JSQMessagesCollectionViewCellIncoming.xib in Resources */,
 				8B5DE34A1B0B3AE200472392 /* JSQMessagesToolbarContentView.xib in Resources */,
+				8B55882C1B0C94A3002DB140 /* ContactsVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -811,6 +908,7 @@
 				8B5DE33E1B0B3AE200472392 /* JSQMessagesCollectionViewCell.m in Sources */,
 				8B5DE3331B0B3AE200472392 /* JSQMessagesCollectionViewFlowLayoutInvalidationContext.m in Sources */,
 				8B5DE32F1B0B3AE200472392 /* JSQMessagesMediaViewBubbleImageMasker.m in Sources */,
+				8B55882B1B0C94A3002DB140 /* ContactsVC.m in Sources */,
 				8B5DE3131B0B3AE200472392 /* AFURLResponseSerialization.m in Sources */,
 				8B5DE33C1B0B3AE200472392 /* JSQMessagesCellTextView.m in Sources */,
 				8B5DE3271B0B3AE200472392 /* UIDevice+JSQMessages.m in Sources */,
@@ -823,10 +921,12 @@
 				8B5DE3541B0B3B2E00472392 /* AppDelegate.m in Sources */,
 				8B5DE3281B0B3AE200472392 /* UIImage+JSQMessages.m in Sources */,
 				8B5DE3391B0B3AE200472392 /* JSQMessagesBubbleImage.m in Sources */,
+				8B5588301B0C94B3002DB140 /* ChatsVC.m in Sources */,
 				8B5DE3491B0B3AE200472392 /* JSQMessagesToolbarContentView.m in Sources */,
 				8B5DE3161B0B3AE200472392 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				8B5DE3101B0B3AE200472392 /* AFSecurityPolicy.m in Sources */,
 				8B5DE31B1B0B3AE200472392 /* UIRefreshControl+AFNetworking.m in Sources */,
+				8B5588251B0C946C002DB140 /* HomeVC.m in Sources */,
 				8B5DE33D1B0B3AE200472392 /* JSQMessagesCollectionView.m in Sources */,
 				8B5DE34B1B0B3AE200472392 /* JSQMessagesTypingIndicatorFooterView.m in Sources */,
 				8B5DE31C1B0B3AE200472392 /* UIWebView+AFNetworking.m in Sources */,
@@ -837,6 +937,7 @@
 				8B5DE33B1B0B3AE200472392 /* JSQVideoMediaItem.m in Sources */,
 				8B5DE3291B0B3AE200472392 /* UIView+JSQMessages.m in Sources */,
 				8B5DE33A1B0B3AE200472392 /* JSQPhotoMediaItem.m in Sources */,
+				8B55883A1B0C94D8002DB140 /* SettingsVC.m in Sources */,
 				8B5DE3121B0B3AE200472392 /* AFURLRequestSerialization.m in Sources */,
 				8B5DE3381B0B3AE200472392 /* JSQMessagesAvatarImage.m in Sources */,
 				8B5DE34E1B0B3AE200472392 /* JSQSystemSoundPlayer.m in Sources */,
@@ -848,6 +949,7 @@
 				8B5DE3431B0B3AE200472392 /* JSQMessagesComposerTextView.m in Sources */,
 				8B5DE3141B0B3AE200472392 /* AFURLSessionManager.m in Sources */,
 				8B5DE21F1B0B342600472392 /* main.m in Sources */,
+				8B5588351B0C94C6002DB140 /* RecentVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
