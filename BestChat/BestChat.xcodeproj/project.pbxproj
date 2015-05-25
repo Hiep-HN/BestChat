@@ -150,6 +150,7 @@
 		8B89D2721B12FF8500668620 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B89D26C1B12FF8500668620 /* TPKeyboardAvoidingScrollView.m */; };
 		8B89D2731B12FF8500668620 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B89D26E1B12FF8500668620 /* TPKeyboardAvoidingTableView.m */; };
 		8B89D2741B12FF8500668620 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B89D2701B12FF8500668620 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		8B89D2771B1331B400668620 /* PFUser+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B89D2761B1331B400668620 /* PFUser+Util.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -397,6 +398,8 @@
 		8B89D26E1B12FF8500668620 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
 		8B89D26F1B12FF8500668620 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		8B89D2701B12FF8500668620 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		8B89D2751B1331B400668620 /* PFUser+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFUser+Util.h"; sourceTree = "<group>"; };
+		8B89D2761B1331B400668620 /* PFUser+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFUser+Util.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -995,6 +998,8 @@
 			children = (
 				8B8442031B0D784A006F1E25 /* UITableViewCell+Identifier.h */,
 				8B8442041B0D784A006F1E25 /* UITableViewCell+Identifier.m */,
+				8B89D2751B1331B400668620 /* PFUser+Util.h */,
+				8B89D2761B1331B400668620 /* PFUser+Util.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1213,6 +1218,7 @@
 				8B5DE3241B0B3AE200472392 /* NSBundle+JSQMessages.m in Sources */,
 				8B5DE33F1B0B3AE200472392 /* JSQMessagesCollectionViewCellIncoming.m in Sources */,
 				8B5DE3211B0B3AE200472392 /* IDMZoomingScrollView.m in Sources */,
+				8B89D2771B1331B400668620 /* PFUser+Util.m in Sources */,
 				8B5DE30D1B0B3AE200472392 /* AFHTTPRequestOperationManager.m in Sources */,
 				8B5DE3371B0B3AE200472392 /* JSQMessage.m in Sources */,
 				8B8442051B0D784A006F1E25 /* UITableViewCell+Identifier.m in Sources */,

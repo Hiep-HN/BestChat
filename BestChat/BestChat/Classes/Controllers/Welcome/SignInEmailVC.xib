@@ -9,6 +9,12 @@
                 <outlet property="_lbTitleVC" destination="uOX-Ev-bv1" id="96G-rB-S8R"/>
                 <outlet property="_scrollView" destination="5fz-oo-SlB" id="H7A-aA-NHG"/>
                 <outlet property="_segment" destination="HnX-Zu-UIX" id="KxJ-5W-oGc"/>
+                <outlet property="_txtEmailSignIn" destination="cCn-0B-5y4" id="4zA-zA-13Z"/>
+                <outlet property="_txtEmailSignUp" destination="WDX-bb-Qwc" id="D24-HD-Qsg"/>
+                <outlet property="_txtFirstName" destination="7tb-xN-GfR" id="mh2-Md-Oba"/>
+                <outlet property="_txtLastName" destination="3Xq-Hy-REb" id="Pz1-tR-Uxf"/>
+                <outlet property="_txtPassSignIn" destination="kre-lo-vYa" id="HdY-Ud-itp"/>
+                <outlet property="_txtPassSignUp" destination="hjc-Og-ev0" id="35Q-Pt-rbt"/>
                 <outlet property="_viewSignIn" destination="PPa-KS-RlX" id="MLn-Qa-k8l"/>
                 <outlet property="_viewSignUp" destination="syK-6f-GBe" id="WbF-RE-nXL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -104,12 +110,18 @@
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="C3a-Pz-tKu"/>
+                                    </connections>
                                 </textField>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="     your last name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Xq-Hy-REb" userLabel="your last name">
                                     <rect key="frame" x="77" y="33" width="209" height="30"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="lKI-X4-HMG"/>
+                                    </connections>
                                 </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWT-ws-7Tb">
                                     <rect key="frame" x="1" y="65" width="76" height="30"/>
@@ -123,6 +135,9 @@
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="2La-xw-qVy"/>
+                                    </connections>
                                 </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsI-5X-jD3">
                                     <rect key="frame" x="1" y="97" width="76" height="30"/>
@@ -135,7 +150,10 @@
                                     <rect key="frame" x="77" y="97" width="209" height="30"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <attributedString key="attributedText"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="CuH-29-RpT"/>
+                                    </connections>
                                 </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Photo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rT-4E-Jmo">
                                     <rect key="frame" x="1" y="129" width="76" height="60"/>
@@ -152,6 +170,9 @@
                                         <color key="titleColor" red="0.23137254900000001" green="0.2470588235" blue="0.23137254900000001" alpha="0.60999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <connections>
+                                        <action selector="__changeAvatar:" destination="-1" eventType="touchUpInside" id="HAu-pA-h2M"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -174,6 +195,9 @@
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="bcP-IZ-snB"/>
+                                    </connections>
                                 </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ort-ir-Kub">
                                     <rect key="frame" x="1" y="33" width="76" height="30"/>
@@ -187,6 +211,9 @@
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="NXa-1n-Q2g"/>
+                                    </connections>
                                 </textField>
                             </subviews>
                             <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -18,6 +18,7 @@
 
 #import <Parse/Parse.h>
 #import "UITableViewCell+Identifier.h"
+#import "PFUser+Util.h"
 #import "Define.h"
 #endif
 #endif
