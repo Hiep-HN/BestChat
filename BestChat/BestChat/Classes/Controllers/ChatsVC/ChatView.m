@@ -353,4 +353,24 @@
     }
     else return nil;
 }
+
+- (NSAttributedString *)collectionView:(JSQMessagesCollectionView *)collectionView attributedTextForCellBottomLabelAtIndexPath:(NSIndexPath *)indexPath {
+    return nil;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return [_messages count];
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    JSQMessagesCollectionViewCell *cell = (JSQMessagesCollectionViewCell *)[super collectionView:collectionView cellForItemAtIndexPath:indexPath];
+    if ([self _outGoing:_messages[indexPath.item]]) {
+        cell.textView.textColor = [UIColor whiteColor];
+    }
+    else
+    {
+        cell.textView.textColor = [UIColor blackColor];
+    }
+    return cell;
+}
 @end
