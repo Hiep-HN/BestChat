@@ -7,6 +7,7 @@
 //
 
 #import "WelcomeVC.h"
+#import "SignInEmailVC.h"
 
 @interface WelcomeVC (){
     
@@ -34,6 +35,8 @@
 - (IBAction)__registerTwitter:(id)sender {
 }
 - (IBAction)__signInEmail:(id)sender {
+    SignInEmailVC *signInEmail = [[SignInEmailVC alloc]init];
+    [self.navigationController pushViewController:signInEmail animated:YES];
 }
 
 @end

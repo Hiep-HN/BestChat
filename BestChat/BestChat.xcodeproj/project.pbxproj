@@ -144,6 +144,12 @@
 		8B84423D1B0DE1F0006F1E25 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8442351B0DE1EF006F1E25 /* LoginView.xib */; };
 		8B84423E1B0DE1F0006F1E25 /* RegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8442371B0DE1EF006F1E25 /* RegisterView.m */; };
 		8B84423F1B0DE1F0006F1E25 /* RegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8442381B0DE1EF006F1E25 /* RegisterView.xib */; };
+		8B89D2661B12BB4F00668620 /* SignInEmailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B89D2641B12BB4F00668620 /* SignInEmailVC.m */; };
+		8B89D2671B12BB4F00668620 /* SignInEmailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B89D2651B12BB4F00668620 /* SignInEmailVC.xib */; };
+		8B89D2711B12FF8500668620 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B89D26A1B12FF8500668620 /* TPKeyboardAvoidingCollectionView.m */; };
+		8B89D2721B12FF8500668620 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B89D26C1B12FF8500668620 /* TPKeyboardAvoidingScrollView.m */; };
+		8B89D2731B12FF8500668620 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B89D26E1B12FF8500668620 /* TPKeyboardAvoidingTableView.m */; };
+		8B89D2741B12FF8500668620 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B89D2701B12FF8500668620 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -380,6 +386,17 @@
 		8B8442361B0DE1EF006F1E25 /* RegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterView.h; sourceTree = "<group>"; };
 		8B8442371B0DE1EF006F1E25 /* RegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterView.m; sourceTree = "<group>"; };
 		8B8442381B0DE1EF006F1E25 /* RegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterView.xib; sourceTree = "<group>"; };
+		8B89D2631B12BB4F00668620 /* SignInEmailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInEmailVC.h; sourceTree = "<group>"; };
+		8B89D2641B12BB4F00668620 /* SignInEmailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInEmailVC.m; sourceTree = "<group>"; };
+		8B89D2651B12BB4F00668620 /* SignInEmailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInEmailVC.xib; sourceTree = "<group>"; };
+		8B89D2691B12FF8500668620 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		8B89D26A1B12FF8500668620 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		8B89D26B1B12FF8500668620 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		8B89D26C1B12FF8500668620 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		8B89D26D1B12FF8500668620 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		8B89D26E1B12FF8500668620 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		8B89D26F1B12FF8500668620 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		8B89D2701B12FF8500668620 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -474,6 +491,9 @@
 				8B8442071B0D822E006F1E25 /* WelcomeVC.h */,
 				8B8442081B0D822E006F1E25 /* WelcomeVC.m */,
 				8B8442091B0D822F006F1E25 /* WelcomeVC.xib */,
+				8B89D2631B12BB4F00668620 /* SignInEmailVC.h */,
+				8B89D2641B12BB4F00668620 /* SignInEmailVC.m */,
+				8B89D2651B12BB4F00668620 /* SignInEmailVC.xib */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -602,6 +622,7 @@
 		8B5DE26A1B0B3AE100472392 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				8B89D2681B12FF8500668620 /* TPKeyboardAvoiding */,
 				8B5DE26B1B0B3AE100472392 /* AFNetworking */,
 				8B5DE2921B0B3AE100472392 /* IDMPhotoBrowser */,
 				8B5DE2A01B0B3AE100472392 /* JSQMessagesViewController */,
@@ -1056,6 +1077,21 @@
 			path = SingleRecipient;
 			sourceTree = "<group>";
 		};
+		8B89D2681B12FF8500668620 /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				8B89D2691B12FF8500668620 /* TPKeyboardAvoidingCollectionView.h */,
+				8B89D26A1B12FF8500668620 /* TPKeyboardAvoidingCollectionView.m */,
+				8B89D26B1B12FF8500668620 /* TPKeyboardAvoidingScrollView.h */,
+				8B89D26C1B12FF8500668620 /* TPKeyboardAvoidingScrollView.m */,
+				8B89D26D1B12FF8500668620 /* TPKeyboardAvoidingTableView.h */,
+				8B89D26E1B12FF8500668620 /* TPKeyboardAvoidingTableView.m */,
+				8B89D26F1B12FF8500668620 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				8B89D2701B12FF8500668620 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			path = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1124,6 +1160,7 @@
 				8B8441F11B0D6AA5006F1E25 /* chat_location@2x.png in Resources */,
 				8B5588261B0C946C002DB140 /* HomeVC.xib in Resources */,
 				8B5DE3221B0B3AE200472392 /* JSQMessagesAssets.bundle in Resources */,
+				8B89D2671B12BB4F00668620 /* SignInEmailVC.xib in Resources */,
 				8B8441F91B0D6AA5006F1E25 /* tab_people@2x.png in Resources */,
 				8B8442231B0DB3DB006F1E25 /* SingleRecipient.xib in Resources */,
 				8B5DE22D1B0B342600472392 /* LaunchScreen.xib in Resources */,
@@ -1193,15 +1230,19 @@
 				8B5DE32F1B0B3AE200472392 /* JSQMessagesMediaViewBubbleImageMasker.m in Sources */,
 				8B55882B1B0C94A3002DB140 /* ContactsVC.m in Sources */,
 				8B8442001B0D6FAC006F1E25 /* RecentCell.m in Sources */,
+				8B89D2731B12FF8500668620 /* TPKeyboardAvoidingTableView.m in Sources */,
 				8B5DE3131B0B3AE200472392 /* AFURLResponseSerialization.m in Sources */,
 				8B5DE33C1B0B3AE200472392 /* JSQMessagesCellTextView.m in Sources */,
+				8B89D2741B12FF8500668620 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				8B8442151B0D9694006F1E25 /* HHTabbarController.m in Sources */,
+				8B89D2711B12FF8500668620 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				8B5DE3271B0B3AE200472392 /* UIDevice+JSQMessages.m in Sources */,
 				8B5DE3451B0B3AE200472392 /* JSQMessagesLabel.m in Sources */,
 				8B5DE3111B0B3AE200472392 /* AFURLConnectionOperation.m in Sources */,
 				8B5DE3181B0B3AE200472392 /* UIButton+AFNetworking.m in Sources */,
 				8B5DE31D1B0B3AE200472392 /* IDMPhoto.m in Sources */,
 				8B5DE3511B0B3AE200472392 /* RNGridMenu.m in Sources */,
+				8B89D2661B12BB4F00668620 /* SignInEmailVC.m in Sources */,
 				8B5DE32B1B0B3AE200472392 /* JSQMessagesViewController.m in Sources */,
 				8B5DE3541B0B3B2E00472392 /* AppDelegate.m in Sources */,
 				8B5DE3281B0B3AE200472392 /* UIImage+JSQMessages.m in Sources */,
@@ -1241,6 +1282,7 @@
 				8B5DE3341B0B3AE200472392 /* JSQMessagesCollectionViewLayoutAttributes.m in Sources */,
 				8B5DE3431B0B3AE200472392 /* JSQMessagesComposerTextView.m in Sources */,
 				8B5DE3141B0B3AE200472392 /* AFURLSessionManager.m in Sources */,
+				8B89D2721B12FF8500668620 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				8B84423E1B0DE1F0006F1E25 /* RegisterView.m in Sources */,
 				8B5DE21F1B0B342600472392 /* main.m in Sources */,
 				8B5588351B0C94C6002DB140 /* RecentVC.m in Sources */,

@@ -12,8 +12,8 @@
 #import <Parse/Parse.h>
 #import "ProgressHUD.h"
 
-#import "AppConstant.h"
-#import "push.h"
+//#import "AppConstant.h"
+//#import "push.h"
 
 #import "RegisterView.h"
 
@@ -91,7 +91,7 @@
 	{
 		if (error == nil)
 		{
-			ParsePushUserAssign();
+			//ParsePushUserAssign();
 			[ProgressHUD showSuccess:@"Succeed."];
 			[self dismissViewControllerAnimated:YES completion:nil];
 		}

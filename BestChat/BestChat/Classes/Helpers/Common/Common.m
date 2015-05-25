@@ -13,6 +13,7 @@
 
 + (void)LoginUser:(id)target {
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:[[WelcomeVC alloc] init]];
+    navi.navigationBarHidden = YES;
     [target presentViewController:navi animated:YES completion:nil];
 }
 

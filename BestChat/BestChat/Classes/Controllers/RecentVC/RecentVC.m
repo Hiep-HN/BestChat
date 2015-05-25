@@ -44,7 +44,7 @@
         [self loadRecents];
     }
     else {
-        //[Common LoginUser:self];
+        [Common LoginUser:self];
     }
 }
 
