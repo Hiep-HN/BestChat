@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B48C1A71B1406F900D0FDD8 /* PhotoMediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B48C1A61B1406F900D0FDD8 /* PhotoMediaItem.m */; };
+		8B48C1AA1B142E7B00D0FDD8 /* VideoMediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B48C1A91B142E7B00D0FDD8 /* VideoMediaItem.m */; };
+		8B48C1AE1B144CE200D0FDD8 /* SingleRecipientVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B48C1AC1B144CE100D0FDD8 /* SingleRecipientVC.m */; };
+		8B48C1AF1B144CE200D0FDD8 /* SingleRecipientVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B48C1AD1B144CE100D0FDD8 /* SingleRecipientVC.xib */; };
+		8B48C1B41B1452E100D0FDD8 /* Backend.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B48C1B31B1452E100D0FDD8 /* Backend.m */; };
+		8B48C1B81B14610800D0FDD8 /* ChatsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B48C1B61B14610800D0FDD8 /* ChatsVC.m */; };
+		8B48C1B91B14610800D0FDD8 /* ChatsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B48C1B71B14610800D0FDD8 /* ChatsVC.xib */; };
 		8B5588251B0C946C002DB140 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5588231B0C946C002DB140 /* HomeVC.m */; };
 		8B5588261B0C946C002DB140 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B5588241B0C946C002DB140 /* HomeVC.xib */; };
 		8B55882B1B0C94A3002DB140 /* ContactsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5588291B0C94A3002DB140 /* ContactsVC.m */; };
 		8B55882C1B0C94A3002DB140 /* ContactsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B55882A1B0C94A3002DB140 /* ContactsVC.xib */; };
-		8B5588301B0C94B3002DB140 /* ChatsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B55882E1B0C94B3002DB140 /* ChatsVC.m */; };
-		8B5588311B0C94B3002DB140 /* ChatsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B55882F1B0C94B3002DB140 /* ChatsVC.xib */; };
 		8B5588351B0C94C6002DB140 /* RecentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5588331B0C94C6002DB140 /* RecentVC.m */; };
 		8B5588361B0C94C6002DB140 /* RecentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B5588341B0C94C6002DB140 /* RecentVC.xib */; };
 		8B55883A1B0C94D8002DB140 /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5588381B0C94D8002DB140 /* SettingsVC.m */; };
@@ -132,8 +137,6 @@
 		8B8442101B0D90F3006F1E25 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B84420F1B0D90F3006F1E25 /* Common.m */; };
 		8B8442151B0D9694006F1E25 /* HHTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8442141B0D9694006F1E25 /* HHTabbarController.m */; };
 		8B8442191B0DA9A7006F1E25 /* HHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8442181B0DA9A7006F1E25 /* HHNavigationController.m */; };
-		8B8442221B0DB3DB006F1E25 /* SingleRecipient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8442201B0DB3DB006F1E25 /* SingleRecipient.m */; };
-		8B8442231B0DB3DB006F1E25 /* SingleRecipient.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8442211B0DB3DB006F1E25 /* SingleRecipient.xib */; };
 		8B8442271B0DB409006F1E25 /* MultiRecipient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8442251B0DB409006F1E25 /* MultiRecipient.m */; };
 		8B8442281B0DB409006F1E25 /* MultiRecipient.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8442261B0DB409006F1E25 /* MultiRecipient.xib */; };
 		8B84422C1B0DB41E006F1E25 /* AddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B84422A1B0DB41E006F1E25 /* AddressBook.m */; };
@@ -154,15 +157,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B48C1A51B1406F900D0FDD8 /* PhotoMediaItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoMediaItem.h; sourceTree = "<group>"; };
+		8B48C1A61B1406F900D0FDD8 /* PhotoMediaItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoMediaItem.m; sourceTree = "<group>"; };
+		8B48C1A81B142E7B00D0FDD8 /* VideoMediaItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoMediaItem.h; sourceTree = "<group>"; };
+		8B48C1A91B142E7B00D0FDD8 /* VideoMediaItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoMediaItem.m; sourceTree = "<group>"; };
+		8B48C1AB1B144CE100D0FDD8 /* SingleRecipientVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleRecipientVC.h; sourceTree = "<group>"; };
+		8B48C1AC1B144CE100D0FDD8 /* SingleRecipientVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleRecipientVC.m; sourceTree = "<group>"; };
+		8B48C1AD1B144CE100D0FDD8 /* SingleRecipientVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingleRecipientVC.xib; sourceTree = "<group>"; };
+		8B48C1B21B1452E100D0FDD8 /* Backend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Backend.h; sourceTree = "<group>"; };
+		8B48C1B31B1452E100D0FDD8 /* Backend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Backend.m; sourceTree = "<group>"; };
+		8B48C1B51B14610800D0FDD8 /* ChatsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatsVC.h; sourceTree = "<group>"; };
+		8B48C1B61B14610800D0FDD8 /* ChatsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatsVC.m; sourceTree = "<group>"; };
+		8B48C1B71B14610800D0FDD8 /* ChatsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatsVC.xib; sourceTree = "<group>"; };
 		8B5588221B0C946C002DB140 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
 		8B5588231B0C946C002DB140 /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
 		8B5588241B0C946C002DB140 /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		8B5588281B0C94A3002DB140 /* ContactsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsVC.h; sourceTree = "<group>"; };
 		8B5588291B0C94A3002DB140 /* ContactsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsVC.m; sourceTree = "<group>"; };
 		8B55882A1B0C94A3002DB140 /* ContactsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsVC.xib; sourceTree = "<group>"; };
-		8B55882D1B0C94B3002DB140 /* ChatsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatsVC.h; sourceTree = "<group>"; };
-		8B55882E1B0C94B3002DB140 /* ChatsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatsVC.m; sourceTree = "<group>"; };
-		8B55882F1B0C94B3002DB140 /* ChatsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatsVC.xib; sourceTree = "<group>"; };
 		8B5588321B0C94C6002DB140 /* RecentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentVC.h; sourceTree = "<group>"; };
 		8B5588331B0C94C6002DB140 /* RecentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentVC.m; sourceTree = "<group>"; };
 		8B5588341B0C94C6002DB140 /* RecentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecentVC.xib; sourceTree = "<group>"; };
@@ -369,9 +381,6 @@
 		8B8442141B0D9694006F1E25 /* HHTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHTabbarController.m; sourceTree = "<group>"; };
 		8B8442171B0DA9A7006F1E25 /* HHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHNavigationController.h; sourceTree = "<group>"; };
 		8B8442181B0DA9A7006F1E25 /* HHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHNavigationController.m; sourceTree = "<group>"; };
-		8B84421F1B0DB3DA006F1E25 /* SingleRecipient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleRecipient.h; sourceTree = "<group>"; };
-		8B8442201B0DB3DB006F1E25 /* SingleRecipient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleRecipient.m; sourceTree = "<group>"; };
-		8B8442211B0DB3DB006F1E25 /* SingleRecipient.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingleRecipient.xib; sourceTree = "<group>"; };
 		8B8442241B0DB409006F1E25 /* MultiRecipient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiRecipient.h; sourceTree = "<group>"; };
 		8B8442251B0DB409006F1E25 /* MultiRecipient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiRecipient.m; sourceTree = "<group>"; };
 		8B8442261B0DB409006F1E25 /* MultiRecipient.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultiRecipient.xib; sourceTree = "<group>"; };
@@ -429,12 +438,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B48C1A41B1406AD00D0FDD8 /* MediaItems */ = {
+			isa = PBXGroup;
+			children = (
+				8B48C1A51B1406F900D0FDD8 /* PhotoMediaItem.h */,
+				8B48C1A61B1406F900D0FDD8 /* PhotoMediaItem.m */,
+				8B48C1A81B142E7B00D0FDD8 /* VideoMediaItem.h */,
+				8B48C1A91B142E7B00D0FDD8 /* VideoMediaItem.m */,
+			);
+			path = MediaItems;
+			sourceTree = "<group>";
+		};
 		8B55881D1B0C93DD002DB140 /* ChatsVC */ = {
 			isa = PBXGroup;
 			children = (
-				8B55882D1B0C94B3002DB140 /* ChatsVC.h */,
-				8B55882E1B0C94B3002DB140 /* ChatsVC.m */,
-				8B55882F1B0C94B3002DB140 /* ChatsVC.xib */,
+				8B48C1B51B14610800D0FDD8 /* ChatsVC.h */,
+				8B48C1B61B14610800D0FDD8 /* ChatsVC.m */,
+				8B48C1B71B14610800D0FDD8 /* ChatsVC.xib */,
+				8B48C1A41B1406AD00D0FDD8 /* MediaItems */,
 				8B84420C1B0D887B006F1E25 /* ChatView.h */,
 				8B84420D1B0D887B006F1E25 /* ChatView.m */,
 			);
@@ -618,6 +639,8 @@
 				8B55883C1B0C9596002DB140 /* Common.h */,
 				8B55883D1B0C95BE002DB140 /* Define.h */,
 				8B84420F1B0D90F3006F1E25 /* Common.m */,
+				8B48C1B21B1452E100D0FDD8 /* Backend.h */,
+				8B48C1B31B1452E100D0FDD8 /* Backend.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1075,9 +1098,9 @@
 		8B84421E1B0DB3C0006F1E25 /* SingleRecipient */ = {
 			isa = PBXGroup;
 			children = (
-				8B84421F1B0DB3DA006F1E25 /* SingleRecipient.h */,
-				8B8442201B0DB3DB006F1E25 /* SingleRecipient.m */,
-				8B8442211B0DB3DB006F1E25 /* SingleRecipient.xib */,
+				8B48C1AB1B144CE100D0FDD8 /* SingleRecipientVC.h */,
+				8B48C1AC1B144CE100D0FDD8 /* SingleRecipientVC.m */,
+				8B48C1AD1B144CE100D0FDD8 /* SingleRecipientVC.xib */,
 			);
 			path = SingleRecipient;
 			sourceTree = "<group>";
@@ -1162,12 +1185,13 @@
 				8B5DE2281B0B342600472392 /* Main.storyboard in Resources */,
 				8B5DE34C1B0B3AE200472392 /* JSQMessagesTypingIndicatorFooterView.xib in Resources */,
 				8B8441FB1B0D6AA5006F1E25 /* tab_settings@2x.png in Resources */,
+				8B48C1B91B14610800D0FDD8 /* ChatsVC.xib in Resources */,
 				8B8441F11B0D6AA5006F1E25 /* chat_location@2x.png in Resources */,
 				8B5588261B0C946C002DB140 /* HomeVC.xib in Resources */,
 				8B5DE3221B0B3AE200472392 /* JSQMessagesAssets.bundle in Resources */,
 				8B89D2671B12BB4F00668620 /* SignInEmailVC.xib in Resources */,
 				8B8441F91B0D6AA5006F1E25 /* tab_people@2x.png in Resources */,
-				8B8442231B0DB3DB006F1E25 /* SingleRecipient.xib in Resources */,
+				8B48C1AF1B144CE200D0FDD8 /* SingleRecipientVC.xib in Resources */,
 				8B5DE22D1B0B342600472392 /* LaunchScreen.xib in Resources */,
 				8B5DE3471B0B3AE200472392 /* JSQMessagesLoadEarlierHeaderView.xib in Resources */,
 				8B8441F21B0D6AA5006F1E25 /* chat_pictures@2x.png in Resources */,
@@ -1177,7 +1201,6 @@
 				8B8441EF1B0D6AA5006F1E25 /* chat_blank@2x.png in Resources */,
 				8B5588361B0C94C6002DB140 /* RecentVC.xib in Resources */,
 				8B5DE22A1B0B342600472392 /* Images.xcassets in Resources */,
-				8B5588311B0C94B3002DB140 /* ChatsVC.xib in Resources */,
 				8B8441F31B0D6AA5006F1E25 /* chat_stickers@2x.png in Resources */,
 				8B8441FA1B0D6AA5006F1E25 /* tab_recent@2x.png in Resources */,
 				8B8441F61B0D6AA5006F1E25 /* settings_blank@2x.png in Resources */,
@@ -1211,6 +1234,7 @@
 				8B5DE3361B0B3AE200472392 /* JSQMediaItem.m in Sources */,
 				8B5DE3201B0B3AE200472392 /* IDMTapDetectingView.m in Sources */,
 				8B5DE3321B0B3AE200472392 /* JSQMessagesCollectionViewFlowLayout.m in Sources */,
+				8B48C1AE1B144CE200D0FDD8 /* SingleRecipientVC.m in Sources */,
 				8B5DE3251B0B3AE200472392 /* NSString+JSQMessages.m in Sources */,
 				8B5DE3191B0B3AE200472392 /* UIImageView+AFNetworking.m in Sources */,
 				8B5DE31E1B0B3AE200472392 /* IDMPhotoBrowser.m in Sources */,
@@ -1224,6 +1248,7 @@
 				8B8442051B0D784A006F1E25 /* UITableViewCell+Identifier.m in Sources */,
 				8B5DE31A1B0B3AE200472392 /* UIProgressView+AFNetworking.m in Sources */,
 				8B5DE3261B0B3AE200472392 /* UIColor+JSQMessages.m in Sources */,
+				8B48C1A71B1406F900D0FDD8 /* PhotoMediaItem.m in Sources */,
 				8B5DE30F1B0B3AE200472392 /* AFNetworkReachabilityManager.m in Sources */,
 				8B5DE3231B0B3AE200472392 /* JSQSystemSoundPlayer+JSQMessages.m in Sources */,
 				8B5DE3461B0B3AE200472392 /* JSQMessagesLoadEarlierHeaderView.m in Sources */,
@@ -1246,6 +1271,7 @@
 				8B5DE3451B0B3AE200472392 /* JSQMessagesLabel.m in Sources */,
 				8B5DE3111B0B3AE200472392 /* AFURLConnectionOperation.m in Sources */,
 				8B5DE3181B0B3AE200472392 /* UIButton+AFNetworking.m in Sources */,
+				8B48C1B81B14610800D0FDD8 /* ChatsVC.m in Sources */,
 				8B5DE31D1B0B3AE200472392 /* IDMPhoto.m in Sources */,
 				8B5DE3511B0B3AE200472392 /* RNGridMenu.m in Sources */,
 				8B89D2661B12BB4F00668620 /* SignInEmailVC.m in Sources */,
@@ -1253,7 +1279,6 @@
 				8B5DE3541B0B3B2E00472392 /* AppDelegate.m in Sources */,
 				8B5DE3281B0B3AE200472392 /* UIImage+JSQMessages.m in Sources */,
 				8B5DE3391B0B3AE200472392 /* JSQMessagesBubbleImage.m in Sources */,
-				8B5588301B0C94B3002DB140 /* ChatsVC.m in Sources */,
 				8B5DE3491B0B3AE200472392 /* JSQMessagesToolbarContentView.m in Sources */,
 				8B5DE3161B0B3AE200472392 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				8B5DE3101B0B3AE200472392 /* AFSecurityPolicy.m in Sources */,
@@ -1272,13 +1297,13 @@
 				8B5DE33B1B0B3AE200472392 /* JSQVideoMediaItem.m in Sources */,
 				8B5DE3291B0B3AE200472392 /* UIView+JSQMessages.m in Sources */,
 				8B5DE33A1B0B3AE200472392 /* JSQPhotoMediaItem.m in Sources */,
+				8B48C1B41B1452E100D0FDD8 /* Backend.m in Sources */,
 				8B55883A1B0C94D8002DB140 /* SettingsVC.m in Sources */,
 				8B5DE3121B0B3AE200472392 /* AFURLRequestSerialization.m in Sources */,
 				8B5DE3381B0B3AE200472392 /* JSQMessagesAvatarImage.m in Sources */,
 				8B8442311B0DB430006F1E25 /* FacebookFriends.m in Sources */,
 				8B8442271B0DB409006F1E25 /* MultiRecipient.m in Sources */,
 				8B5DE34E1B0B3AE200472392 /* JSQSystemSoundPlayer.m in Sources */,
-				8B8442221B0DB3DB006F1E25 /* SingleRecipient.m in Sources */,
 				8B8442101B0D90F3006F1E25 /* Common.m in Sources */,
 				8B5DE31F1B0B3AE200472392 /* IDMTapDetectingImageView.m in Sources */,
 				8B5DE3151B0B3AE200472392 /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -1286,6 +1311,7 @@
 				8B84422C1B0DB41E006F1E25 /* AddressBook.m in Sources */,
 				8B5DE32D1B0B3AE200472392 /* JSQMessagesAvatarImageFactory.m in Sources */,
 				8B5DE3341B0B3AE200472392 /* JSQMessagesCollectionViewLayoutAttributes.m in Sources */,
+				8B48C1AA1B142E7B00D0FDD8 /* VideoMediaItem.m in Sources */,
 				8B5DE3431B0B3AE200472392 /* JSQMessagesComposerTextView.m in Sources */,
 				8B5DE3141B0B3AE200472392 /* AFURLSessionManager.m in Sources */,
 				8B89D2721B12FF8500668620 /* TPKeyboardAvoidingScrollView.m in Sources */,

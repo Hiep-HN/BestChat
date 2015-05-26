@@ -9,6 +9,11 @@
 #import "ChatView.h"
 #import "ProgressHUD.h"
 #import "JSQMessages.h"
+#import "PhotoMediaItem.h"
+#import "VideoMediaItem.h"
+#import "IDMPhotoBrowser.h"
+#import <MediaPlayer/MediaPlayer.h>
+#import "Common.h"
 
 @interface ChatView (){
     NSTimer *_timer;
@@ -31,6 +36,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Chat";
+    
     
     _users = [[NSMutableArray alloc] init];
     _messages = [[NSMutableArray alloc] init];
@@ -372,5 +378,83 @@
         cell.textView.textColor = [UIColor blackColor];
     }
     return cell;
+}
+
+#pragma mark - JSQMessages collection view flow layout delegate
+
+- (CGFloat)collectionView:(JSQMessagesCollectionView *)collectionView layout:(JSQMessagesCollectionViewFlowLayout *)collectionViewLayout heightForCellTopLabelAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.item % 3 == 0) {
+        return kJSQMessagesCollectionViewCellLabelHeightDefault;
+    }
+    else return 0;
+}
+
+- (CGFloat)collectionView:(JSQMessagesCollectionView *)collectionView layout:(JSQMessagesCollectionViewFlowLayout *)collectionViewLayout heightForMessageBubbleTopLabelAtIndexPath:(NSIndexPath *)indexPath {
+    JSQMessage *message = _messages[indexPath.item];
+    if ([self _inComing:message]) {
+        if (indexPath.item > 0) {
+            JSQMessage *previous = _messages[indexPath.item - 1];
+            if ([previous.senderId isEqualToString:message.senderId]) {
+                return 0;
+            }
+        }
+        return kJSQMessagesCollectionViewCellLabelHeightDefault;
+    }
+    else return 0;
+}
+
+- (CGFloat)collectionView:(JSQMessagesCollectionView *)collectionView layout:(JSQMessagesCollectionViewFlowLayout *)collectionViewLayout heightForCellBottomLabelAtIndexPath:(NSIndexPath *)indexPath {
+    return 0;
+}
+
+#pragma mark - Responding to collection view tap events
+- (void)collectionView:(JSQMessagesCollectionView *)collectionView header:(JSQMessagesLoadEarlierHeaderView *)headerView didTapLoadEarlierMessagesButton:(UIButton *)sender {
+    NSLog(@"didTapLoadEarlierMessagesButton");
+}
+
+- (void)collectionView:(JSQMessagesCollectionView *)collectionView didTapAvatarImageView:(UIImageView *)avatarImageView atIndexPath:(NSIndexPath *)indexPath {
+    JSQMessage *message = _messages[indexPath.item];
+    if ([self _inComing:message]) {
+        //
+    }
+}
+
+- (void)collectionView:(JSQMessagesCollectionView *)collectionView didTapMessageBubbleAtIndexPath:(NSIndexPath *)indexPath {
+    JSQMessage *message = _messages[indexPath.item];
+    if (message.isMediaMessage) {
+        if ([message.media isKindOfClass:[PhotoMediaItem class]]) {
+            PhotoMediaItem *mediaItem = (PhotoMediaItem *)message.media;
+            NSArray *photos = [IDMPhoto photosWithImages:@[mediaItem.image]];
+            IDMPhotoBrowser *browser = [[IDMPhotoBrowser alloc] initWithPhotos:photos];
+            [self presentViewController:browser animated:YES completion:nil];
+        }
+        if ([message.media isKindOfClass:[VideoMediaItem class]]) {
+            VideoMediaItem *mediaItem = (VideoMediaItem *)message.media;
+            MPMoviePlayerViewController *moviePlayer = [[MPMoviePlayerViewController alloc] initWithContentURL:mediaItem.fileURL];
+            [self presentMoviePlayerViewControllerAnimated:moviePlayer];
+            [moviePlayer.moviePlayer play];
+        }
+    }
+}
+
+- (void)collectionView:(JSQMessagesCollectionView *)collectionView didTapCellAtIndexPath:(NSIndexPath *)indexPath touchLocation:(CGPoint)touchLocation {
+    NSLog(@"didTapCellAtIndexPath %@", NSStringFromCGPoint(touchLocation));
+}
+
+#pragma mark - RNGridMenuDelegate
+
+- (void)gridMenu:(RNGridMenu *)gridMenu willDismissWithSelectedItem:(RNGridMenuItem *)item atIndex:(NSInteger)itemIndex {
+    [gridMenu dismissAnimated:NO];
+}
+
+#pragma mark - UIImagePickerControllerDelegate
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    NSURL *video = info[UIImagePickerControllerMediaURL];
+    UIImage *picture = info[UIImagePickerControllerEditedImage];
+    
+    [self _sendMessage:nil video:video picture:picture];
+    
+    [picker dismissViewControllerAnimated:YES completion:nil];
 }
 @end

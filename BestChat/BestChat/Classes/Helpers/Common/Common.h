@@ -19,6 +19,11 @@
 
 + (UIColor *)colorFromHexString:(NSString *)hexString;
 
++ (BOOL)presentPhotoCamera:(id)target canEdit:(BOOL)canEdit;
++ (BOOL)presentVideoCamera:(id)target canEdit:(BOOL)canEdit;
++ (BOOL)presentMultiCamera:(id)target canEdit:(BOOL)canEdit;
++ (BOOL)presentPhotoLibrary:(id)target canEdit:(BOOL)canEdit;
++ (BOOL)presentVideoLibrary:(id)target canEdit:(BOOL)canEdit;
 @end
 
 #endif

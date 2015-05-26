@@ -1,40 +1,35 @@
 //
-//  SingleRecipient.m
+//  SingleRecipientVC.m
 //  BestChat
 //
-//  Created by HiepHN-imac on 5/21/15.
+//  Created by HiepHN-imac on 5/26/15.
 //  Copyright (c) 2015 Hiep Huynh Ngoc. All rights reserved.
 //
 
-#import "SingleRecipient.h"
+#import "SingleRecipientVC.h"
 #import "ProgressHUD.h"
 
-@interface SingleRecipient ()<UISearchBarDelegate> {
+@interface SingleRecipientVC ()<UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate> {
     NSMutableArray *_users;
+    
+    __weak IBOutlet UITableView *_tableView;
+    
 }
-@property (strong, nonatomic) IBOutlet UIView *viewHeader;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 
 @end
 
-@implementation SingleRecipient
-@synthesize viewHeader, searchBar;
+@implementation SingleRecipientVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.title = @"Select Single";
-    
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(__actionCancel)];
-    
-    self.tableView.tableHeaderView = self.viewHeader;
-    
+    _users = [[NSMutableArray alloc] init];
     [self loadUsers];
+
 }
 
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-    [self.view endEditing:YES];
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
 }
 
 #pragma mark - Backend methods
@@ -55,7 +50,7 @@
             if (!error) {
                 [_users removeAllObjects];
                 [_users addObjectsFromArray:objects];
-                [self.tableView reloadData];
+                [_tableView reloadData];
             }else {
                 [ProgressHUD showError:@"Network error."];
             }
@@ -80,23 +75,21 @@
             if (!error) {
                 [_users removeAllObjects];
                 [_users addObjectsFromArray:objects];
-                [self.tableView reloadData];
+                [_tableView reloadData];
             }else {
                 [ProgressHUD showError:@"Network error."];
             }
         }];
     }
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 #pragma mark - Blocks.
 
 #pragma mark - Actions.
-- (void)__actionCancel {
+- (IBAction)__cancelAction:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -109,7 +102,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    if (cell) {
+    if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];
     }
     
@@ -153,8 +146,9 @@
 }
 
 - (void)searchBarCancelled {
-    searchBar.text = @"";
-    [searchBar resignFirstResponder];
+    _searchBar.text = @"";
+    [_searchBar resignFirstResponder];
     [self loadUsers];
 }
+
 @end
