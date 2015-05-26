@@ -14,8 +14,9 @@
 #import "RecentCell.h"
 #import "ChatView.h"
 #import "Common.h"
+#import "Backend.h"
 
-#import "SingleRecipient.h"
+#import "SingleRecipientVC.h"
 #import "HHNavigationController.h"
 
 @interface RecentVC ()<UIActionSheetDelegate, UITableViewDataSource, UITableViewDelegate> {
@@ -36,6 +37,11 @@
     [_tableView registerNib:[UINib nibWithNibName:[RecentCell identifier] bundle:nil] forCellReuseIdentifier:[RecentCell identifier]];
     
     _recents = [[NSMutableArray alloc]init];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar setHidden:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -91,6 +97,10 @@
 - (void)actionChat:(NSString *)groupId {
     ChatView *chatView = [[ChatView alloc] initWith:groupId];
     chatView.hidesBottomBarWhenPushed = YES;
+    [self.navigationController.navigationBar setHidden:NO];
+    [self.navigationController.navigationBar setTranslucent:NO];
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    self.navigationController.navigationBar.barTintColor = [UIColor blackColor];
     [self.navigationController pushViewController:chatView animated:YES];
 }
 
@@ -103,13 +113,13 @@
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (buttonIndex != actionSheet.cancelButtonIndex) {
         if (buttonIndex == 0) {
-            SingleRecipient *selectSingle = [[SingleRecipient alloc] init];
+            SingleRecipientVC *selectSingle = [[SingleRecipientVC alloc] init];
             HHNavigationController *navi = [[HHNavigationController alloc] initWithRootViewController:selectSingle];
             
-            [selectSingle setDidSelectSingleUserBlock:^(PFUser *user) {
+            [selectSingle setDidSelectSingleUserBlock:^(PFUser *user2) {
                 PFUser *user1 = [PFUser currentUser];
-                //NSString *groupId =
-                [self actionChat:@""];
+                NSString *groupId = [Backend startPrivateChat:user1 user2:user2];
+                [self actionChat:groupId];
             }];
             
             [self presentViewController:navi animated:YES completion:nil];
@@ -136,6 +146,9 @@
     return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 70;
+}
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     return YES;
 }

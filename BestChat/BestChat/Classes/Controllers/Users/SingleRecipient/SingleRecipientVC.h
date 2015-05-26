@@ -10,4 +10,6 @@
 
 @interface SingleRecipientVC : UIViewController
 
+@property (nonatomic, strong) void (^didSelectSingleUserBlock)(PFUser *);
+
 @end
