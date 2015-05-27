@@ -14,6 +14,7 @@
 #import "IDMPhotoBrowser.h"
 #import <MediaPlayer/MediaPlayer.h>
 #import "Common.h"
+#import "Backend.h"
 
 @interface ChatView (){
     NSTimer *_timer;
@@ -445,6 +446,15 @@
 
 - (void)gridMenu:(RNGridMenu *)gridMenu willDismissWithSelectedItem:(RNGridMenuItem *)item atIndex:(NSInteger)itemIndex {
     [gridMenu dismissAnimated:NO];
+    if ([item.title isEqualToString:@"Camera"]) {
+        [Common presentMultiCamera:self canEdit:YES];
+    }
+    if ([item.title isEqualToString:@"Pictures"]) {
+        [Common presentPhotoLibrary:self canEdit:YES];
+    }
+    if ([item.title isEqualToString:@"Videos"]) {
+        [Common presentVideoLibrary:self canEdit:YES];
+    }
 }
 
 #pragma mark - UIImagePickerControllerDelegate
