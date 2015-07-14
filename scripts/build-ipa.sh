@@ -50,7 +50,7 @@ main()
     local provisioning_file='HuynhNgocHiepTestPro'
     local provisioning_file_dir="$HOME/Library/MobileDevice/Provisioning Profiles"
     local xcode_scheme='BestChat'
-    local xcode_workspace='BestChat'
+    local xcode_workspace=''
     local xcode_target='BestChat'
     local configuration='Release'
 
