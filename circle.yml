@@ -1,0 +1,30 @@
+# CocoaPodsを使用しない(.xcodeprojを使用する)場合の例
+machine:
+  environment:
+    XCODE_SCHEME: BestChat
+    XCODE_PROJECT: BestChat.xcodeproj
+    XCODE_TARGET: BestChat
+    APPNAME: BestChat
+    DEPLOYGATE_USER_NAME: hiephuynh
+    DEVELOPER_NAME: "iPhone Distribution: Hiep Huynh Ngoc (YLRZZHWDN3)"
+    PROFILE_NAME: "b9f4c082-d347-476d-9425-9ec61c80c8fc.mobileprovision"
+    DEPLOYGATE_API_TOKEN: 03e565e1f04a952760ce6172dfb3aace323c5051
+    # P12_FILE_PASSWORD: set from web form
+# test:
+#   override:
+#     - xcodebuild
+#         CODE_SIGNING_REQUIRED=NO
+#         CODE_SIGN_IDENTITY=
+#         PROVISIONING_PROFILE=
+#         -project BestChat.xcodeproj -scheme CircleCI-Sample -configuration Release -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=8.1,name=iPhone 6'
+#         clean test
+
+deployment:
+  deploygate:
+    branch: master
+    owner: hiephuynh
+    commands:
+      - ./scripts/add-key.sh
+      - ./scripts/deploy.sh
+      - ./scripts/remove-key.sh
+
