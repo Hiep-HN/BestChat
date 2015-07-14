@@ -10,14 +10,14 @@ machine:
     PROFILE_NAME: "b9f4c082-d347-476d-9425-9ec61c80c8fc.mobileprovision"
     DEPLOYGATE_API_TOKEN: 03e565e1f04a952760ce6172dfb3aace323c5051
     # P12_FILE_PASSWORD: set from web form
-# test:
-#   override:
-#     - xcodebuild
-#         CODE_SIGNING_REQUIRED=NO
-#         CODE_SIGN_IDENTITY=
-#         PROVISIONING_PROFILE=
-#         -project BestChat.xcodeproj -scheme CircleCI-Sample -configuration Release -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=8.1,name=iPhone 6'
-#         clean test
+test:
+  override:
+    - xcodebuild
+        CODE_SIGNING_REQUIRED=NO
+        CODE_SIGN_IDENTITY=
+        PROVISIONING_PROFILE=HuynhNgocHiepTestPro
+        -project BestChat.xcodeproj -scheme BestChat -configuration Release -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=8.1,name=iPhone 6'
+        clean test
 
 deployment:
   deploygate:
