@@ -26,8 +26,8 @@ print_error()
 
 main()
 {
-    local user_name=''
-    local api_token=''
+    local user_name='hiephuynh'
+    local api_token='03e565e1f04a952760ce6172dfb3aace323c5051'
     local file_path=''
     local message=''
 

@@ -17,8 +17,8 @@ for config in "${configuration_list[@]}"; do
         -c "$config" \
         -o "$output_path"
 
-    ./upload-ipa-to-deploygate.sh \
-        -u "$DEPLOYGATE_USER_NAME" -t "$DEPLOYGATE_API_TOKEN" -m "$message" \
-        "${output_path}/${APPNAME}.ipa"
+    # ./upload-ipa-to-deploygate.sh \
+    #     -u "$DEPLOYGATE_USER_NAME" -t "$DEPLOYGATE_API_TOKEN" -m "$message" \
+    #     "${output_path}/${APPNAME}.ipa"
 done
 
