@@ -45,13 +45,13 @@ print_error()
 main()
 {
     local output_path="$PWD/build"
-    local developer_name=''
-    local appname=''
-    local provisioning_file=''
+    local developer_name='Hiep Huynh Ngoc'
+    local appname='BestChat'
+    local provisioning_file='HuynhNgocHiepTestPro'
     local provisioning_file_dir="$HOME/Library/MobileDevice/Provisioning Profiles"
-    local xcode_scheme=''
-    local xcode_workspace=''
-    local xcode_target=''
+    local xcode_scheme='BestChat'
+    local xcode_workspace='BestChat'
+    local xcode_target='BestChat'
     local configuration='Release'
 
     local option
